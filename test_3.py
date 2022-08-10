@@ -1,21 +1,18 @@
 def ordenar(data):
-    lista1=[]
+    lista1= []
+    lista2=[]
     for companie in data:
         if companie['tradename'] != '':
             lista1.append(companie['tradename'])
         elif companie['tradename'] == '':
-            lista1.append(companie['firstname'])
-            lista1.append(companie['lastname'])
-            lista1.append(companie['maidenname'])
-
-            lista2 =' '.join(lista1)
+            lista2.extend([companie['firstname'],companie['lastname'],companie['maidenname']])
+            nombre =' '.join(lista2)
+            lista2.clear()         
+            lista1.append(nombre)
+            
+    lista1.sort()
         
-        
-
-    #object = {companie['tradename']: companie['tradename'] for companie in data if data['tradename'] != ''}
-    #print(object)
-    
-    print(lista2)
+    print(lista1)
 
 
 thirds = [

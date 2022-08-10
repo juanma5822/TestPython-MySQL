@@ -1,9 +1,4 @@
-class Data:
-    
-    @staticmethod
-    def get_companies():
-        
-        companies = [
+companies = [
             {
                 'id': 1,
                 'name': 'Empresa Uno',
@@ -26,12 +21,10 @@ class Data:
                 'branches': [4]
             }
         ] 
-        return companies
-    
-    @staticmethod
-    def get_branches():
         
-        branches = [
+    
+   
+branches = [
             {
                 'id': 1,
                 'name': 'Sucursal Uno',
@@ -63,11 +56,9 @@ class Data:
                 'isMain': False
             }
         ]     
-        return branches
-    
-    @staticmethod
-    def get_thirds():
-        thirds = [
+        
+   
+thirds = [
             {
                 "billAddress1": "CRA 8 69 76",
                 "cellPhone": None,
@@ -369,11 +360,8 @@ class Data:
                 "tradename": "FONDO NACIONAL DEL AHORRO"
             }
         ]
-        return thirds
-    
-    @staticmethod
-    def get_colors():
-        colors = [
+        
+colors = [
             {
                 "colorCode": "AMA",
                 "colorName": "AMARILLO"
@@ -423,11 +411,10 @@ class Data:
                 "colorName": "VIOLETA"
             }
         ]
-        return colors
+       
     
-    @staticmethod
-    def get_items():
-        items = [
+    
+items = [
             {
                 'code': '001',
                 'name': 'Celular',
@@ -479,7 +466,7 @@ class Data:
                 'color': None
             }
         ]
-        return items
+        
     
     
 
